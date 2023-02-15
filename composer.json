@@ -7,10 +7,14 @@
             "email": "sroczynski.michal@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^7.5",
+        "php-di/php-di": "^6.3"
+    },
     "autoload": {
         "psr-4": {
-            "Zadanie\\": "src/"
+            "Task\\": "src/"
         }
     }
 }
