@@ -1,0 +1,11 @@
+{
+    "name": "michal/zadanie",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Michał Sroczyński",
+            "email": "sroczynski.michal@gmail.com"
+        }
+    ],
+    "require": {}
+}
