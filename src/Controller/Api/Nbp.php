@@ -68,7 +68,7 @@ class Nbp
     private function processGetMethod(array $uri): array
     {
         if (count($uri) !== 3) {
-            throw new Exception('Wrong GET request');
+            throw new Exception('Wrong param number.');
         }
 
         $this->currencyValidator->validate($uri[0]);
@@ -95,7 +95,7 @@ class Nbp
             $avgRate += $rate['mid'];
         }
 
-        return (float)number_format((float)($avgRate / count($rates)), 4, '.', '');
+        return (float)number_format((float)($avgRate / count($rates)), 4, ',', '');
     }
 
 }
